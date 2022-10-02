@@ -26,14 +26,7 @@ app.get('^/$|index(.html)?', (_, res: Response) => {
   res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
-// app.get<{}, MessageResponse>('/api/v1', (_, res) => {
-//   res.json({
-//     message: 'API - 👋🌎🌍🌏'
-//   });
-// });
-
 app.use('/api/v1', api);
-// app.use('/api/v1/todos', todosRoutes);
 
 app.use(notFound);
 app.use(errorHandler);
