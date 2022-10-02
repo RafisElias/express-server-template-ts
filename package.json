@@ -9,8 +9,7 @@
     "build": "tsc",
     "lint": "npx eslint --ext .ts --fix src",
     "test": "NODE_ENV=test vitest",
-    "test:verbose": "NODE_ENV=test vitest --reporter verbose",
-    "coverage": "NODE_ENV=test vitest run --coverage"
+    "test:verbose": "NODE_ENV=test vitest --reporter verbose"
   },
   "keywords": [],
   "author": "Rafael Elias <rafaelniza20000@hotmail.com>",
