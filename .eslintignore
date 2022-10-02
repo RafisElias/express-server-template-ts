@@ -3,3 +3,5 @@
 ./src/views/*
 
 ./logs/**
+
+src/@types
