@@ -1,5 +1,4 @@
 import 'express-async-errors';
-import dotenv from 'dotenv';
 import express, { Response } from 'express';
 import morgan from 'morgan';
 import helmet from 'helmet';
@@ -11,8 +10,6 @@ import errorHandler from './middleware/erroHandler.middleware';
 import { logger } from './middleware/logger.middleware';
 import notFound from './middleware/notFound.middleware';
 import api from './api';
-
-dotenv.config();
 
 const app = express();
 
