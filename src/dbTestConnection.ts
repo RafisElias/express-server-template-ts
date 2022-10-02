@@ -25,7 +25,9 @@ export const close = async () => {
 export const clear = async () => {
   const collections = await mongoose.connection.db.collections();
 
-  for (const collection of collections) {
-    collection.deleteMany();
-  }
+  await Promise.all(
+    collections.map(async (collection) => {
+      await collection.deleteMany({});
+    })
+  );
 };
