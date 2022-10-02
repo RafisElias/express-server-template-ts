@@ -16,6 +16,10 @@
     "@typescript-eslint",
     "prettier"
   ],
+  "ignorePatterns": [
+    "./src/logs/**",
+    "./src/public/**"
+  ],
   "rules": {
     "comma-dangle": [
       "error",

@@ -1,3 +1,5 @@
 /dist
 
-src/views/*
+./src/views/*
+
+./logs/**
